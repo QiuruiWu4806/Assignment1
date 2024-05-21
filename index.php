@@ -1,12 +1,20 @@
+<?php
+session_start();
+
+if (!isset($_SESSSION['logged_in'])) {
+header('Location: /login.php');
+?>
+
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+  <head>
+    <title>QiuruiWu</title>
+  </head>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <body>
+    <h1>COSC4806 - Assignment1</h1>
 
-</body>
+    <p> Welcome, <?=$_SESSION['username'] ?></p>
+    <p><a href ="/login.php">Logout</a></p>
+  </body>
 </html>
