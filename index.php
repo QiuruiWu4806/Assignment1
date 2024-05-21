@@ -15,6 +15,6 @@ header('Location: /login.php');
     <h1>COSC4806 - Assignment1</h1>
 
     <p> Welcome, <?=$_SESSION['username'] ?></p>
-    <p><a href ="/login.php">Logout</a></p>
+    <p><a href ="/logout.php">Logout</a></p>
   </body>
 </html>
